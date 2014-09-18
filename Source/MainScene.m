@@ -7,12 +7,13 @@
 //
 
 #import "MainScene.h"
+#import "GameScene.h"
 
 @implementation MainScene
 
 - (void)nextScene {
     CCLOG(@"(MainScene) nextScene");
-    CCScene *nextScene = [CCBReader loadAsScene:@"GameScene"];
+    GameScene *nextScene = (GameScene*)[CCBReader loadAsScene:@"GameScene"];
     [[CCDirector sharedDirector]replaceScene:nextScene withTransition:[CCTransition transitionCrossFadeWithDuration:0.5f]];
 }
 

@@ -19,8 +19,20 @@
 
 - (void)prevScene {
     CCLOG(@"(GameScene) prevScene");
-    CCScene *nextScene = [CCBReader loadAsScene:@"MainScene"];
+    GameScene *nextScene = (GameScene*)[CCBReader loadAsScene:@"GameScene"];
     [[CCDirector sharedDirector]replaceScene:nextScene withTransition:[CCTransition transitionCrossFadeWithDuration:0.5f]];
+}
+
+- (void)didLoadFromCCB {
+    self.userInteractionEnabled = YES;
+}
+
+- (void)touchBegan:(UITouch *)touch withEvent:(UIEvent *)event {
+    CCLOG(@"(GameScene) touchBegan");
+}
+
+- (void)touchEnded:(UITouch *)touch withEvent:(UIEvent *)event {
+    CCLOG(@"(GameScene) touchEnded");
 }
 
 @end

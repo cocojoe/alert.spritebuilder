@@ -269,8 +269,8 @@
 						<string>Position</string>
 						<key>value</key>
 						<array>
-							<real>189</real>
-							<real>29.999984741210938</real>
+							<real>248</real>
+							<real>41.999984741210938</real>
 							<integer>0</integer>
 							<integer>0</integer>
 							<integer>0</integer>
@@ -1074,7 +1074,7 @@
 						<string>String</string>
 						<key>value</key>
 						<array>
-							<string>Main Scene</string>
+							<string>Game Scene</string>
 							<false/>
 						</array>
 					</dict>
@@ -1284,8 +1284,6 @@
 						</array>
 					</dict>
 				</array>
-				<key>selected</key>
-				<true/>
 			</dict>
 		</array>
 		<key>customClass</key>
@@ -1358,6 +1356,8 @@
 				</array>
 			</dict>
 		</array>
+		<key>selected</key>
+		<true/>
 	</dict>
 	<key>notes</key>
 	<array/>

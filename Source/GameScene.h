@@ -8,6 +8,6 @@
 
 #import "CCNode.h"
 
-@interface GameScene : CCNode
+@interface GameScene : CCScene
 
 @end
